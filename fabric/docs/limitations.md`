@@ -1,0 +1,10 @@
+## 36. `docs/limitations.md`
+
+```markdown
+# Limitations
+
+- Metro movement is estimated using GTFS, not live train GPS.
+- Public GitHub data uses sample datasets only.
+- Microsoft Fabric workspace connections and secrets are excluded.
+- Raw API exports and large datasets are excluded.
+- The animated map is a portfolio demo layer built on top of Fabric-processed data
