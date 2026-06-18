@@ -1,0 +1,24 @@
+## 30. `docs/microsoft_fabric_implementation.md`
+
+```markdown
+# Microsoft Fabric Implementation
+
+## Fabric Components
+
+- Eventhouse: `eh_stm_realtime`
+- KQL Database: `kqldb_stm_operations`
+- Eventstreams: `evs_stm_transit_events`, `evs_stm_service_status`
+- Lakehouse: `lh_stm_transit`
+- Pipelines: scheduled collection workflows
+- Semantic Model: `sem_stm_transit_operations`
+- Dashboard: `STM Transit Intelligence Dashboard`
+
+## Processing Layers
+
+- Bronze: raw ingestion
+- Silver: cleaned transit entities
+- Gold: operational KPIs and map-ready outputs
+
+## Why Fabric
+
+Microsoft Fabric provides one environment for real-time ingestion, KQL analytics, Lakehouse processing, semantic modeling, and dashboarding.
