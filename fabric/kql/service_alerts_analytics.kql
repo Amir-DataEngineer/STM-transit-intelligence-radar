@@ -1,0 +1,8 @@
+// Service Alerts Analytics KQL
+// Used to analyze STM service alerts and disruptions.
+
+rt_service_alerts
+| summarize
+    alert_count = count(),
+    affected_routes = dcount(route_id),
+    latest_alert_time = max(ingestion_time)
