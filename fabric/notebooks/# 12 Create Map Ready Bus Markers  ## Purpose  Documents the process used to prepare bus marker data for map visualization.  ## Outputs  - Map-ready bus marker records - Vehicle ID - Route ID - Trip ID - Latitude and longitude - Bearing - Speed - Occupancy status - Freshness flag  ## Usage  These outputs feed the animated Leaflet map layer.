@@ -1,0 +1,16 @@
+# 13 Historical Snapshot Foundation
+
+## Purpose
+
+Documents the historical snapshot foundation used for playback analytics.
+
+## Key Logic
+
+- Capture time-based vehicle positions
+- Build 5-minute playback frames
+- Preserve historical movement snapshots
+- Support animation replay
+
+## Output
+
+Historical vehicle positions that can be exported for animation.
