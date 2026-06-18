@@ -1,0 +1,86 @@
+[
+  {
+    "timestamp": "2026-06-16T20:00:00Z",
+    "vehicle_id": "METRO-GREEN-0-1",
+    "mode": "metro",
+    "line_key": "green",
+    "line_name": "Green Line",
+    "line_color": "#00843D",
+    "route_id": "1",
+    "trip_id": "296382552",
+    "shape_id": "1_1071",
+    "direction_id": "0",
+    "train_number": 1,
+    "lat": 45.501,
+    "lon": -73.57,
+    "path_points": [
+      [45.501, -73.57],
+      [45.505, -73.568],
+      [45.510, -73.565]
+    ],
+    "source": "GTFS estimated metro movement"
+  },
+  {
+    "timestamp": "2026-06-16T20:05:00Z",
+    "vehicle_id": "METRO-GREEN-0-1",
+    "mode": "metro",
+    "line_key": "green",
+    "line_name": "Green Line",
+    "line_color": "#00843D",
+    "route_id": "1",
+    "trip_id": "296382552",
+    "shape_id": "1_1071",
+    "direction_id": "0",
+    "train_number": 1,
+    "lat": 45.510,
+    "lon": -73.565,
+    "path_points": [
+      [45.510, -73.565],
+      [45.515, -73.562],
+      [45.520, -73.560]
+    ],
+    "source": "GTFS estimated metro movement"
+  },
+  {
+    "timestamp": "2026-06-16T20:00:00Z",
+    "vehicle_id": "METRO-ORANGE-0-1",
+    "mode": "metro",
+    "line_key": "orange",
+    "line_name": "Orange Line",
+    "line_color": "#FF671F",
+    "route_id": "2",
+    "trip_id": "296382700",
+    "shape_id": "2_2040",
+    "direction_id": "0",
+    "train_number": 1,
+    "lat": 45.520,
+    "lon": -73.590,
+    "path_points": [
+      [45.520, -73.590],
+      [45.522, -73.585],
+      [45.524, -73.580]
+    ],
+    "source": "GTFS estimated metro movement"
+  },
+  {
+    "timestamp": "2026-06-16T20:05:00Z",
+    "vehicle_id": "METRO-ORANGE-0-1",
+    "mode": "metro",
+    "line_key": "orange",
+    "line_name": "Orange Line",
+    "line_color": "#FF671F",
+    "route_id": "2",
+    "trip_id": "296382700",
+    "shape_id": "2_2040",
+    "direction_id": "0",
+    "train_number": 1,
+    "lat": 45.524,
+    "lon": -73.580,
+    "path_points": [
+      [45.524, -73.580],
+      [45.526, -73.575],
+      [45.528, -73.570]
+    ],
+    "source": "GTFS estimated metro movement"
+  }
+]
