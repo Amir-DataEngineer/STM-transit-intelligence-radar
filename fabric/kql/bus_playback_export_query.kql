@@ -1,0 +1,38 @@
+// Bus Playback Export Query
+// Used to export 5-minute bus movement frames from Eventhouse.
+
+let StartTime = datetime(2026-06-16T19:40:00Z);
+let EndTime = datetime(2026-06-16T20:45:00Z);
+
+rt_bus_vehicle_positions
+| where ingestion_time between (StartTime .. EndTime)
+| extend frame_time = bin(ingestion_time, 5m)
+| join kind=inner (
+    rt_bus_vehicle_positions
+    | where ingestion_time between (StartTime .. EndTime)
+    | extend frame_time = bin(ingestion_time, 5m)
+    | summarize by frame_time
+    | top 10 by frame_time desc
+    | project frame_time
+) on frame_time
+| extend lat = todouble(latitude)
+| extend lon = todouble(longitude)
+| where isnotempty(vehicle_id)
+| where isnotempty(route_id)
+| where isnotempty(trip_id)
+| where isnotnull(lat) and isnotnull(lon)
+| where lat between (45.30 .. 45.80)
+| where lon between (-74.10 .. -73.20)
+| summarize arg_max(ingestion_time, *) by vehicle_id, frame_time
+| project
+    timestamp = tostring(frame_time),
+    vehicle_id = tostring(vehicle_id),
+    route_id = tostring(route_id),
+    trip_id = tostring(trip_id),
+    raw_lat = todouble(latitude),
+    raw_lon = todouble(longitude),
+    bearing = todouble(column_ifexists("bearing", 0.0)),
+    speed = todouble(column_ifexists("speed", 0.0)),
+    occupancy_status = tostring(column_ifexists("occupancy_status", "UNKNOWN")),
+    ingestion_time = tostring(ingestion_time)
+| order by vehicle_id asc, timestamp asc
