@@ -1,0 +1,19 @@
+// Freshness Monitoring KQL
+// Used to monitor data freshness, latest ingestion time, stale vehicles, and latency.
+
+rt_bus_vehicle_positions
+| summarize
+    total_records = count(),
+    active_vehicles = dcount(vehicle_id),
+    active_routes = dcount(route_id),
+    latest_ingestion_time = max(ingestion_time),
+    oldest_ingestion_time = min(ingestion_time)// Freshness Monitoring KQL
+// Used to monitor data freshness, latest ingestion time, stale vehicles, and latency.
+
+rt_bus_vehicle_positions
+| summarize
+    total_records = count(),
+    active_vehicles = dcount(vehicle_id),
+    active_routes = dcount(route_id),
+    latest_ingestion_time = max(ingestion_time),
+    oldest_ingestion_time = min(ingestion_time)
