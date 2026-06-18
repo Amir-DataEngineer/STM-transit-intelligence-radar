@@ -1,0 +1,74 @@
+[
+  {
+    "timestamp": "2026-06-16T20:00:00Z",
+    "vehicle_id": "BUS-1001",
+    "route_id": "35",
+    "trip_id": "301025318",
+    "shape_id": "bus_shape_35",
+    "lat": 45.5017,
+    "lon": -73.5673,
+    "bearing": 120,
+    "speed": 18,
+    "occupancy_status": "FEW_SEATS_AVAILABLE",
+    "snap_distance_m": 12.5,
+    "path_points": [
+      [45.5017, -73.5673],
+      [45.5025, -73.5681],
+      [45.5031, -73.5690]
+    ]
+  },
+  {
+    "timestamp": "2026-06-16T20:05:00Z",
+    "vehicle_id": "BUS-1001",
+    "route_id": "35",
+    "trip_id": "301025318",
+    "shape_id": "bus_shape_35",
+    "lat": 45.5031,
+    "lon": -73.5690,
+    "bearing": 135,
+    "speed": 19,
+    "occupancy_status": "FEW_SEATS_AVAILABLE",
+    "snap_distance_m": 10.9,
+    "path_points": [
+      [45.5031, -73.5690],
+      [45.5042, -73.5700],
+      [45.5051, -73.5712]
+    ]
+  },
+  {
+    "timestamp": "2026-06-16T20:00:00Z",
+    "vehicle_id": "BUS-1002",
+    "route_id": "411",
+    "trip_id": "301027767",
+    "shape_id": "bus_shape_411",
+    "lat": 45.5080,
+    "lon": -73.5800,
+    "bearing": 230,
+    "speed": 21,
+    "occupancy_status": "MANY_SEATS_AVAILABLE",
+    "snap_distance_m": 18.2,
+    "path_points": [
+      [45.5080, -73.5800],
+      [45.5072, -73.5810],
+      [45.5066, -73.5823]
+    ]
+  },
+  {
+    "timestamp": "2026-06-16T20:05:00Z",
+    "vehicle_id": "BUS-1002",
+    "route_id": "411",
+    "trip_id": "301027767",
+    "shape_id": "bus_shape_411",
+    "lat": 45.5066,
+    "lon": -73.5823,
+    "bearing": 240,
+    "speed": 22,
+    "occupancy_status": "MANY_SEATS_AVAILABLE",
+    "snap_distance_m": 15.7,
+    "path_points": [
+      [45.5066, -73.5823],
+      [45.5058, -73.5834],
+      [45.5051, -73.5847]
+    ]
+  }
+]
