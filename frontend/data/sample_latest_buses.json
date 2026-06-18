@@ -1,0 +1,30 @@
+[
+  {
+    "timestamp": "2026-06-16T20:40:00Z",
+    "vehicle_id": "BUS-1001",
+    "route_id": "35",
+    "trip_id": "301025318",
+    "shape_id": "bus_shape_35",
+    "lat": 45.5017,
+    "lon": -73.5673,
+    "bearing": 120,
+    "speed": 18,
+    "occupancy_status": "FEW_SEATS_AVAILABLE",
+    "snap_distance_m": 12.5,
+    "is_stale": false
+  },
+  {
+    "timestamp": "2026-06-16T20:40:00Z",
+    "vehicle_id": "BUS-1002",
+    "route_id": "411",
+    "trip_id": "301027767",
+    "shape_id": "bus_shape_411",
+    "lat": 45.508,
+    "lon": -73.58,
+    "bearing": 240,
+    "speed": 21,
+    "occupancy_status": "MANY_SEATS_AVAILABLE",
+    "snap_distance_m": 18.2,
+    "is_stale": false
+  }
+]
