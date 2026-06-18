@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STM Transit Intelligence Radar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="sidebar">
+        <h1>STM Transit Intelligence Radar</h1>
+        <p class="subtitle">Microsoft Fabric + FastAPI + Leaflet Demo</p>
+
+        <label for="routeInput">Route ID</label>
+        <input id="routeInput" type="text" placeholder="Example: 35">
+
+        <button id="liveBtn">Live Mode</button>
+        <button id="playbackBtn">Playback Last 30 Minutes</button>
+        <button id="clearBtn">Clear Map</button>
+
+        <div id="statusBox">Waiting for data...</div>
+
+        <div id="detailsBox">
+            Select a bus or metro marker.
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js?v=github1"></script>
+    <script src="metro_layer.js?v=github1"></script>
+</body>
+</html>
