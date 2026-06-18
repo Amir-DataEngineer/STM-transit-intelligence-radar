@@ -1,0 +1,130 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    background: #111827;
+    color: white;
+    z-index: 1000;
+    padding: 16px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+#sidebar h1 {
+    font-size: 21px;
+    margin: 0 0 4px 0;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #cbd5e1;
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #dbeafe;
+}
+
+#statusBox,
+#detailsBox {
+    background: #1f2937;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 14px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+#map {
+    position: absolute;
+    left: 320px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bus-marker-wrapper {
+    width: 30px;
+    height: 30px;
+}
+
+.bus-marker {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #2563eb;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.55);
+}
+
+.bus-marker.stale {
+    background: #6b7280;
+}
+
+.bus-triangle {
+    color: white;
+    font-size: 17px;
+    line-height: 1;
+}
+
+.metro-marker-wrapper {
+    width: 28px;
+    height: 28px;
+}
+
+.metro-marker {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    color: #111827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.metro-marker::before {
+    content: "M";
+}
