@@ -1,7 +1,5 @@
  Assets
 
-Add the following files here before publishing or sharing on LinkedIn:
-
 - architecture_diagram.png
 - Live_map_demo.gif
 - dashboard_screenshot.png
