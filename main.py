@@ -12,7 +12,7 @@ DATA_DIR = FRONTEND_DIR / "data"
 
 app = FastAPI(
     title="STM Transit Intelligence Radar",
-    description="Public-safe FastAPI backend for the STM animated transit radar demo.",
+    description="Public-safe FastAPI backend for the STM live transit radar demo.",
     version="1.0.0"
 )
 
