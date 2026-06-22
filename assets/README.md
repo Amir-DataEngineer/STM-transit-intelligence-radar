@@ -1,8 +1,17 @@
- Assets
+## Demo and Screenshots
 
-- architecture_diagram.png
-- Live_map_demo.gif
-- dashboard_screenshot.png
-- fabric_workspace_screenshot.png
-- eventhouse_screenshot.png
-- dashboard_overview_screenshot.png
+### Executive Transit Health Dashboard
+
+![Executive Transit Health Dashboard](assets/Dashboard.png)
+
+### Live Transit Radar Map
+
+![Animated Transit Radar Map](assets/Dashboard2.png)
+
+### Semantic Model Overview
+
+![Semantic Model Overview](assets/Sem.png)
+
+### Demo Video
+
+[Watch the demo video](assets/Demo-STM.mp4)
