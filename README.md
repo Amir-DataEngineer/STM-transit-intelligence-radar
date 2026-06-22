@@ -2,7 +2,7 @@
 
 An end-to-end Microsoft Fabric transit intelligence project for STM Montréal.
 
-This project combines Microsoft Fabric, Eventhouse, KQL, Lakehouse processing, GTFS, Python, FastAPI, and Leaflet to create an animated transit radar for bus movement and estimated metro movement.
+This project combines Microsoft Fabric, Eventhouse, KQL, Lakehouse processing, GTFS, Python, FastAPI, and Leaflet to create an animated transit radar for bus movement and live metro movement.
 
 ## Project Overview
 
@@ -19,7 +19,7 @@ The project includes:
 - Route-synced animated bus playback
 - Estimated metro movement for Green and Orange lines
 - FastAPI backend
-- Leaflet-based animated map frontend
+- Leaflet-based Live map frontend
 - Power BI / Semantic Model documentation
 
 ## Business Problem
@@ -45,4 +45,4 @@ Operational KPIs + Semantic Model
         ↓
 FastAPI Backend
         ↓
-Leaflet Animated Transit Radar
+Leaflet Live Transit Radar
